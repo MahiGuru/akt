@@ -5,7 +5,7 @@ import { HomeComponent } from './features/home/home.component';
 
 const routes: Routes = [
   {path: 'login', loadChildren: () => import('./features/authentication/authentication.module').then((m) => m.AuthenticationModule)},
-  {path: 'home', loadChildren: () => import('./features/home/home.module').then(m => m.HomeModule)},
+  {path: '', loadChildren: () => import('./features/home/home.module').then(m => m.HomeModule)},
   {path: 'about', loadChildren: () => import('./features/about/about.module').then(m => m.AboutModule)},
   {path: 'jobs', loadChildren: () => import('./features/jobs/jobs.module').then(m => m.JobsModule)},
   {path: 'hire', loadChildren: () => import('./features/hire/hire.module').then(m => m.HireModule)},
@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'service', loadChildren: () => import('./features/services/services.module').then(m => m.ServicesModule)},
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: '',
     pathMatch: 'full'
   }
 ];

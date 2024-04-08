@@ -1,19 +1,41 @@
-<div
-    class="max-w-screen-xl mx-auto p-4"
+<div class="max-w-screen-xl mx-auto p-4">
+  <!-- <app-banner></app-banner>  -->
+  <img src="../../../assets/banner1.jpg" width="auto" height="100" style="margin: auto" />
+  <div
+    class="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-4 m-4 items-center"
   >
-<app-banner></app-banner>
-
-<div class="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-4 m-4 items-center">
     <div>
-        <app-akt-card title="IT Services"></app-akt-card>
+      <app-akt-card title="IT Staffing Services">
+        <p>
+          specialize in matching skilled IT professionals with companies seeking
+          temporary, contract, or permanent staff. These services streamline the
+          hiring process by sourcing, screening, and presenting qualified
+          candidates for various IT roles, including software development,
+          network administration, cybersecurity, and technical support.
+        </p>
+      </app-akt-card>
     </div>
     <div>
-        <app-akt-card title="HR and Facility Services" [img]="'hrservice.png'"></app-akt-card>
+      <app-akt-card title="HR and Facility Services" [img]="'hrservice.png'">
+        <p>
+          These services can include recruitment and staffing, employee benefits
+          administration, payroll processing, training and development,
+          performance management, compliance with employment laws and
+          regulations, employee relations, and HR technology implementation.  
+        </p>
+      </app-akt-card>
     </div>
     <div>
-        <app-akt-card title="Finance Services" [img]="'financeservice.jpg'"></app-akt-card>
+      <app-akt-card title="Finance Services" [img]="'financeservice.jpg'">
+        <p>
+          Finance services encompass a variety of offerings including investment
+          management, financial planning, wealth management, tax preparation,
+          accounting, and insurance services, aimed at helping individuals and
+          businesses manage their financial affairs effectively. 
+        </p>
+      </app-akt-card>
     </div>
-</div> 
-<app-overview-list></app-overview-list>
+  </div>
+  <app-overview-list></app-overview-list>
 </div>
 <app-footer></app-footer>

@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/akt-consultants/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/dist/akt-consultants/browser/index.html"
+      }
+    ]
+  }
+}

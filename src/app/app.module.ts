@@ -8,10 +8,13 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ComponentModule } from './components/component.module';
+import { RouterModule } from '@angular/router';
+import { AktHeaderComponent } from './components/akt-header/akt-header.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
+    AktHeaderComponent
   ],
   imports: [
     BrowserModule,
